@@ -1,0 +1,32 @@
+div {
+	height: 1000px;
+	text-align: center;
+}
+.my_paralax_bg {
+	background-color: #061625;
+	height: 50vh;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.my_img0 {
+	background-image: url( "../img/f0.png" );
+}
+.my_img1 {
+	background-image: url( "../img/f0.png" );
+}
+.my_img2 {
+	background-image: url( "../img/f0.png" );
+}
+.my_text {
+	height: 25vh;
+}
+.text {
+	color: white;
+	font-weight: bold;
+	font-family: Verdana, Tahoma;
+	display: inline-block;
+	text-transform: uppercase;
+	position: relative;
+	top: 30px;
+	left: 30px;
+}

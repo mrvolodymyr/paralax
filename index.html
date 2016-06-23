@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<title>Paralax</title>
+</head>
+<body>
+	<div>
+		<section class="col-sm-12 my_paralax_bg my_img0">
+			<h1 class="text text0">Lorem ipsum</h1>
+		</section>
+		<section class="col-sm-12 my_text">
+			<article>
+				<h1>Lorem ipsum</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus deserunt maxime dolores, molestiae ipsam laudantium minus ad est reiciendis, fugit a ab placeat. Quos minima, delectus officiis, temporibus ex nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus deserunt maxime dolores, molestiae ipsam laudantium minus ad est reiciendis, fugit a ab placeat. Quos minima, delectus officiis, temporibus ex nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus deserunt maxime dolores, molestiae ipsam laudantium minus ad est reiciendis, fugit a ab placeat. Quos minima, delectus officiis, temporibus ex nam.</p>	
+			</article>
+		</section>
+		<section class="col-sm-12 my_paralax_bg my_img1">
+			<h1 class="text text1">Lorem ipsum</h1>
+		</section>
+		<section class="col-sm-12 my_text">
+			<article>
+				<h1>Lorem ipsum</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore vel, possimus asperiores voluptatum laudantium exercitationem! Quasi tempora voluptatem, obcaecati repellat distinctio odit sit, omnis quo asperiores, tenetur impedit nulla earum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus deserunt maxime dolores, molestiae ipsam laudantium minus ad est reiciendis, fugit a ab placeat. Quos minima, delectus officiis, temporibus ex nam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus deserunt maxime dolores, molestiae ipsam laudantium minus ad est reiciendis, fugit a ab placeat. Quos minima, delectus officiis, temporibus ex nam.</p>	
+			</article>
+		</section>
+		<section class="col-sm-12 my_paralax_bg my_img2">
+			<h1 class="text text2">Lorem ipsum</h1>
+		</section>
+	</div>
+
+	<script>
+		$( window ).scroll( function () {
+			var scr = $( this ).scrollTop();
+
+			$( " .text " ).css( {
+				"transform" : "translate( 0%, "+ scr*2.2 +"% )"
+			} );
+			$( " .text1 " ).css( {
+				"transform" : "translate( 0%, "+ scr*0.75 +"% )"
+			} );
+			$( " .text2 " ).css( {
+				"transform" : "translate( 0%, "+ scr*0.3 +"% )"
+			} );
+			$( " .my_paralax_bg " ).css( {
+				"transform" : "translate( 0%, "+ scr*0.003 +"% )"
+			} );
+
+		} );
+
+		/*
+		<section class="col-sm-12 my_text">
+			
+		</section>
+		<section class="col-sm-12 my_bg_img my_bg_img_1">
+			
+		</section>
+		<section class="col-sm-12 my_text">
+			
+		</section>
+		<section class="col-sm-12 my_bg_img my_bg_img_2">
+			
+		</section>
+		*/
+	</script>
+</body>
+</html>
